@@ -13,7 +13,7 @@ Hi there! 👋 I'm Nastya, right now I live in Zagreb, Croatia. I am a passionat
 
 I've had the opportunity to contribute to and create a variety of projects. Here are a few highlights:
 
-- [SLim Mom][https://slimmom5group.netlify.app/]
+- [SLim Mom](https://slimmom5group.netlify.app/)
 - [Platano Fest](https://platanofest.netlify.app/)
 - [Ice Cream](https://boikoanastasiia.github.io/Ice-Cream-Project/)
 
