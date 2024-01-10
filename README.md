@@ -1,6 +1,6 @@
 # Welcome to My GitHub Profile!
 
-Hi there! 👋 I'm Nastya, a passionate front-end developer with 3 years of hands-on experience. I thrive on turning creative ideas into functional and visually appealing web applications. For 15 years I have been working as a graphic designer making magazines. This aesthetic sensibility continues to influence my approach to front-end development, where I emphasize not just functionality but also a delightful user experience. Below, you'll find a glimpse of what I bring to the table.
+Hi there! 👋 I'm Nastya, right now I live in Zagreb, Croatia. I am a passionate front-end developer with 3 years of hands-on experience. I thrive on turning creative ideas into functional and visually appealing web applications. For 15 years I have been working as a graphic designer making magazines. This aesthetic sensibility continues to influence my approach to front-end development, where I emphasize not just functionality but also a delightful user experience. Below, you'll find a glimpse of what I bring to the table.
 
 ## 🔧 Skills
 
@@ -14,14 +14,14 @@ Hi there! 👋 I'm Nastya, a passionate front-end developer with 3 years of hand
 I've had the opportunity to contribute to and create a variety of projects. Here are a few highlights:
 
 - [SLim Mom][https://slimmom5group.netlify.app/]
-- [Project 2 with link]
-- [Project 3 with link]
+- [Platano Fest](https://platanofest.netlify.app/)
+- [Ice Cream](https://boikoanastasiia.github.io/Ice-Cream-Project/)
 
 Feel free to explore my repositories for more insights into my work.
 
 ## 🌐 Portfolio
 
-For a more in-depth look at my portfolio, you can visit [your portfolio website or another relevant link].
+For a more in-depth look at my [portfolio](https://drive.google.com/file/d/1srfzr2jEUFr9Ns6NPOrhoIy3rzZaRHsq/view?usp=sharing).
 
 ## 👨‍💻 Open to Collaboration
 
@@ -29,8 +29,8 @@ I'm always on the lookout for interesting projects and collaborations. If you ha
 
 ## 📬 Contact Me
 
-- **Email:** [your email]
-- **LinkedIn:** [your LinkedIn profile]
-- **Portfolio:** [your portfolio website]
+- **Email:** boiko.nastasiia@gmail.com
+- **LinkedIn:** [anastasiya-boiko](https://www.linkedin.com/in/anastasiya-boiko-026238198/)
+- **Telegram:** @Anastasyah
 
 Let's create something amazing together! 🚀
