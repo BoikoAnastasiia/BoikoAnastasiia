@@ -10,7 +10,13 @@ Right now I work on a large-scale **sports content creation platform**, where I 
 
 ## 🌐 Live Projects
 
+**[🏋️ PODHOD](https://podhod-workout.cc/)** ([source](https://github.com/BoikoAnastasiia/podhod)) — a bilingual (EN/RU) workout program builder and tracker, full-stack solo on Cloudflare Workers + D1: a 1,324-exercise library, per-exercise progression schemes computed by a pure engine, ready-made programs, Google sign-in, light/dark theming, and a CI pipeline that migrates the database before every deploy.
+
 **[🎸 Guess the Band](https://guesstheband.fun/)** — a music guessing game I built from zero: concept, design, frontend, and deployment. My playground for the things I care about — snappy interactions, clear feedback, and a UI that's actually fun to use.
+
+**[📚 Slovníček](https://slovnicek-alpha.vercel.app/)** — an offline-first PWA that teaches Slovak vocabulary to Russian speakers: FSRS spaced repetition, auto-graded quiz rounds, a frequency-ordered bank of 2,000 words, and optional cross-device sync through Supabase.
+
+**[🇭🇷 Rječniček](https://rjecnicek.vercel.app/)** — Slovníček's Croatian sibling, built for family: a B1–B2 word bank extended with trade-specific (electrician's) vocabulary, same offline-first engine.
 
 **[⚡ Gipper Platform](https://platform.gogipper.com/)** — the sports content creation platform I work on daily, where I focus on microfrontend architecture, the AI canvas pipeline, SSR, and accessibility.
 
