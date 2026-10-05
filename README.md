@@ -1,64 +1,84 @@
 # Hi, I'm Nastya 👋
 
-**Front-End Developer** with 5 years building production React apps — and 10 years as a graphic designer before that.
+**Full-stack developer, strongest on the frontend.** Five years of commercial React and TypeScript on a B2B SaaS platform, together with the Node.js services behind it. Ten years as a graphic designer before that.
 
-That mix is the whole point: I don't just make interfaces work, I make them feel right. Loading states, skeletons, transitions, micro-feedback — to me these aren't polish added at the end, they're part of the product. I bring a designer's eye to engineering: intuitive, accessible, visually consistent UI, backed by solid architecture.
+I build products end to end: database schema, API, interface, deployment. The design background means I also care how the result feels. Loading states, transitions, feedback and accessibility are part of the product to me, not polish added at the end.
 
-Right now I work on a large-scale **sports content creation platform**, where I focus on microfrontend architecture, AI-driven UI, and accessibility.
-
----
-
-## 🌐 Live Projects
-
-**[🏋️ PODHOD](https://podhod-workout.cc/)** ([source](https://github.com/BoikoAnastasiia/podhod)) — a bilingual (EN/RU) workout program builder and tracker, full-stack solo on Cloudflare Workers + D1: a 1,324-exercise library, per-exercise progression schemes computed by a pure engine, ready-made programs, Google sign-in, light/dark theming, and a CI pipeline that migrates the database before every deploy.
-
-**[🎸 Guess the Band](https://guesstheband.fun/)** — a music guessing game I built from zero: concept, design, frontend, and deployment. My playground for the things I care about — snappy interactions, clear feedback, and a UI that's actually fun to use.
-
-**[📚 Slovníček](https://slovnicek-alpha.vercel.app/)** — an offline-first PWA that teaches Slovak vocabulary to Russian speakers: FSRS spaced repetition, auto-graded quiz rounds, a frequency-ordered bank of 2,000 words, and optional cross-device sync through Supabase.
-
-**[🇭🇷 Rječniček](https://rjecnicek.vercel.app/)** — Slovníček's Croatian sibling, built for family: a B1–B2 word bank extended with trade-specific (electrician's) vocabulary, same offline-first engine.
-
-**[⚡ Gipper Platform](https://platform.gogipper.com/)** — the sports content creation platform I work on daily, where I focus on microfrontend architecture, the AI canvas pipeline, SSR, and accessibility.
+Open to full-stack and frontend roles across Europe, remote or hybrid.
 
 ---
 
-## 🚀 What I'm building
+## 🌐 Built solo, end to end
 
-**AI-powered canvas generation pipeline.** A Claude AI agent interprets natural-language requests, the frontend renders offscreen React templates, measures text slots via `getBoundingClientRect`, and assembles a Fabric.js canvas — turning what used to be manual design work into a fully automated flow. I also built a branding color-matching algorithm that auto-applies workspace colors to AI-generated objects.
+**[🏋️ Podhod](https://podhod-workout.cc/)** ([source](https://github.com/BoikoAnastasiia/podhod)) — a bilingual (EN/RU) workout program builder and tracker. A Hono API on Cloudflare Workers with D1 and Drizzle ORM, a 1,324-exercise library, per-exercise progression computed by a pure engine, Google sign-in, and a CI pipeline that migrates the database before every deploy.
+`React` `TypeScript` `Hono` `Cloudflare Workers` `D1` `Drizzle ORM`
 
-**14-module microfrontend architecture** using Vite, React, and Module Federation — independent deployments across a large content application.
+**[🎸 Guess the Band](https://guesstheband.fun/)** ([source](https://github.com/BoikoAnastasiia/guess-the-band)) — a music quiz. Vercel Functions proxy the Deezer API server-side instead of exposing it to the browser, and every round and answer is recorded in Postgres to compute per-track difficulty. Anonymous play always works and syncs the moment you sign in.
+`React` `Vite` `TypeScript` `Supabase` `Vercel Functions`
 
-**Production server-side rendering.** A Node.js server renders React to HTML strings and assembles full documents for published pages — with Sentry monitoring, CSS/font injection, data preloading, Safari polyfills, and PDF.js integration. Real production SSR, not just framework defaults.
+**[📚 Slovníček](https://slovnicek-alpha.vercel.app/)** ([source](https://github.com/BoikoAnastasiia/slovnicek)) — an offline-first PWA that teaches Slovak vocabulary to Russian speakers, with FSRS spaced repetition and a frequency-ordered bank of 2,000 words. IndexedDB is the source of truth, not a cache. The hard part is a hand-written bidirectional sync engine: last-write-wins with per-table watermarks, and pull ordered before push so a stale offline edit can never overwrite a newer server row.
+`Next.js` `TypeScript` `Dexie` `Supabase` `PWA`
 
-**Accessibility (WCAG 2.1)** — ARIA, full keyboard navigation, and screen-reader support baked into the components I ship.
+**[🇭🇷 Rječniček](https://rjecnicek.vercel.app/)** ([source](https://github.com/BoikoAnastasiia/rjecnicek)) — Slovníček's Croatian sibling, built for family: a B1–B2 word bank extended with an electrician's trade vocabulary, running on the same offline-first engine.
+`Next.js` `TypeScript` `Dexie` `Supabase` `Vitest`
+
+**🤖 [jobfeeder](https://github.com/BoikoAnastasiia/jobfeeder)** — a job aggregator over five sources behind a pluggable source interface. Runs on a GitHub Actions cron every four hours with persistent dedupe state and notifies through a Telegram bot. My first Python project.
+`Python` `GitHub Actions` `Telegram Bot`
 
 ---
 
-## 🛠️ Tech Stack
+## 🏢 Commercial work: Gipper (2021–2026)
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+Five years on [Gipper](https://platform.gogipper.com/), a B2B SaaS platform for creating graphics, newsletters and websites, used by thousands of organizations.
+
+**AI-powered generation pipeline.** A Claude agent interprets a text prompt, React renders templates offscreen and measures text slots via `getBoundingClientRect`, and Fabric.js assembles the design. It made graphic creation about 5x faster. Built on the platform's Mastra / Node.js / PostgreSQL AI engine; I also wrote the agents' evaluations and tests, and a color-matching algorithm that applies workspace branding to generated objects.
+
+**Server-side rendering from scratch.** A Node.js server that renders React to HTML and assembles full documents for customer-published sites, with data preloading, CSS and font injection, Sentry monitoring and cross-browser fixes.
+
+**Real-time and media services.** A Socket.io service tracking live device state, with token auth, automatic reconnection and a freeze watchdog for stalled connections. AWS S3 presigned uploads and Lambda integrated into a production media pipeline.
+
+**14-module microfrontend platform.** Vite and Module Federation: 2 host apps, 9 feature modules, 3 shared libraries, 34 routes, each deployed independently through Bitbucket Pipelines. Later migrated to a pnpm + Turborepo monorepo, with custom branch-sync tooling.
+
+**Shared UI kit.** 150+ Storybook-documented components, accessible to WCAG 2.1 (ARIA, full keyboard navigation, screen-reader support), used by every feature module.
+
+**Testing and tooling.** Playwright end-to-end tests on critical user flows, and the team's AI development harness on Claude Code, taking Jira tickets to tested, review-ready PRs.
+
+---
+
+## 🛠️ Tech stack
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Hono](https://img.shields.io/badge/Hono-E36002?style=flat&logo=hono&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)
+![Drizzle](https://img.shields.io/badge/Drizzle_ORM-C5F74F?style=flat&logo=drizzle&logoColor=black)
+
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white)
 ![MobX](https://img.shields.io/badge/MobX-FF9955?style=flat&logo=mobx&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white)
-![Fabric.js](https://img.shields.io/badge/Fabric.js-FF5A5F?style=flat&logo=javascript&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 
-- **Languages:** HTML5, CSS3, SCSS, JavaScript (ES6+), TypeScript
-- **Frameworks & State:** React, Next.js, Module Federation, Redux Toolkit, MobX
-- **Backend & Cloud:** Node.js, AWS, Google Cloud, MongoDB
-- **Tools:** Git, Figma, Vite, Fabric.js, Playwright, Agile/Scrum
-- **AI:** Claude SDK & prompt engineering, agentic loop engineering, graph engineering, AI workflow automation
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat&logo=cloudflareworkers&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat&logo=vitest&logoColor=white)
+![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat&logo=storybook&logoColor=white)
+
+- **Languages:** TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
+- **Backend & data:** Node.js, REST APIs, SSR, Hono, serverless functions, WebSockets (Socket.io), OAuth 2.0, PostgreSQL (schema design, indexing, row-level security), MongoDB, Drizzle ORM
+- **Cloud & DevOps:** AWS (S3, Lambda), Google Cloud, Vercel, Cloudflare Workers, Supabase, CI/CD (Bitbucket Pipelines, GitHub Actions)
+- **Frontend:** React, Next.js (App Router), MobX, Redux Toolkit, TanStack Query, Tailwind CSS, SCSS, Fabric.js
+- **Architecture & testing:** Microfrontends (Module Federation), monorepos (pnpm workspaces, Turborepo), design systems, Playwright (E2E), Vitest, Storybook
+- **AI:** Claude API & Agent SDK, Mastra, agent evaluations, Claude Code, prompt engineering
 
 ---
 
@@ -68,16 +88,9 @@ Right now I work on a large-scale **sports content creation platform**, where I 
 
 ---
 
-## 💡 A bit more about me
-
-Former magazine graphic designer, now a front-end engineer. I love turning fuzzy ideas into interfaces people actually enjoy using, and I care a lot about the small details that make software feel considered. Open to collaboration and to interesting front-end and AI-adjacent work across Europe.
-
----
-
 ## 📫 Get in touch
 
+[![Portfolio](https://img.shields.io/badge/a--boiko.dev-111111?style=flat&logo=googlechrome&logoColor=white)](https://a-boiko.dev)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:boiko.nastasiia@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anastasiya-boiko-026238198)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anastasiia-boiko-026238198/)
 [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat&logo=telegram&logoColor=white)](https://t.me/Anastasyah)
-
-Thanks for stopping by — feel free to explore my repositories. ✨
