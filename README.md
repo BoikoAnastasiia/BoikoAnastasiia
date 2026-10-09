@@ -10,6 +10,9 @@ Open to full-stack and frontend roles across Europe, remote or hybrid.
 
 ## 🌐 Built solo, end to end
 
+**[⚓ Kambuz](https://kambuz-lilac.vercel.app/)** ([source](https://github.com/BoikoAnastasiia/kambuz)) — «Что приготовить?»: pick a meal and a cuisine, get a recipe. The recipes come from a multi-agent Claude pipeline that turns YouTube cooking videos into structured recipes: a scout splits a vlog into its dishes, an extractor writes each one up in Russian with timestamps into the video, a verifier checks every ingredient and amount against the transcript, and a judge spots duplicates. It reads speech in any language, silent videos' chapters and the author's description. I benchmarked models per agent and moved the pipeline from Sonnet to Haiku 5.5, about 30× cheaper at 2–3 cents a video. Recipes live in MongoDB; new videos are queued from the site, admin-only behind Google sign-in, for a worker on my machine.
+`Claude API` `TypeScript` `Next.js` `MongoDB` `Auth.js` `Zod`
+
 **[🏋️ Podhod](https://podhod-workout.cc/)** ([source](https://github.com/BoikoAnastasiia/podhod)) — a bilingual (EN/RU) workout program builder and tracker. A Hono API on Cloudflare Workers with D1 and Drizzle ORM, a 1,324-exercise library, per-exercise progression computed by a pure engine, Google sign-in, and a CI pipeline that migrates the database before every deploy.
 `React` `TypeScript` `Hono` `Cloudflare Workers` `D1` `Drizzle ORM`
 
